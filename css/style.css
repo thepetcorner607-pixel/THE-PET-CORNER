@@ -1,1 +1,6 @@
-
+body{font-family:Arial,sans-serif;background:#f4f7f4}
+.navbar,.bg-success{background:#198754!important}
+.card{border:none;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.btn-success{border-radius:25px}
+.whatsapp-float{position:fixed;right:20px;bottom:20px;z-index:9999}
+footer{margin-top:40px;padding:20px;text-align:center;background:#222;color:#fff}
