@@ -1,4 +1,9 @@
-body{font-family:Arial,sans-serif;background:#f4f7f4}
+.logo{
+width:120px;
+border-radius:20px;
+margin-bottom:15px;
+}
+body{Screenshot_2026-07-08-22-14-52-12_99c04817c0de5652397fc8b56c3b3817.jpg}
 .navbar,.bg-success{background:#198754!important}
 .card{border:none;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
 .btn-success{border-radius:25px}
