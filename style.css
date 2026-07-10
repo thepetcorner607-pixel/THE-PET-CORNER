@@ -1,1 +1,7 @@
-body{background:#f4f7f4}.card{box-shadow:0 2px 8px rgba(0,0,0,.15)}
+body {
+    background-image: url('images/Are You a Pet Photographer_ Here’s What Pet Marketing Unleashed Has for You! (1).jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
