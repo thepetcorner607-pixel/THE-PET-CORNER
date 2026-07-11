@@ -27,17 +27,14 @@ button{
     box-shadow:0 0 15px #25D366;
     transition:0.3s;
 }
-<button>View Details</button>
-
-button{
-  background: light (45deg,#00c853,#00e676);
+all buttons{
+  background: yellow (45deg,#00c853,#00e676);
 }
-<button>grooming</button>
 
 button{
   background: yellow (45deg,#00c853,#00e676);
+🐕 pet sale
 }
-<button>🐕 pet sale</button>
 
 button{
   background: green (45deg,#00c853,#00e676);
