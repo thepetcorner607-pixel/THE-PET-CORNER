@@ -45,9 +45,13 @@ button{
 <button>💉 vaccination</button>
 
 button{
-  background: light blue (45deg,#00c853,#00e676);
+  background: white (45deg,#00c853,#00e676);
 }
 button:hover{
     transform:translateY(-4px);
     box-shadow:0 0 25px #25D366;
 }
+<button>view details</button>
+button{
+    background:light sky (45deg,#00c853,#00e676);
+    
