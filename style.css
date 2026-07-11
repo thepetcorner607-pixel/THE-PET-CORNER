@@ -1,4 +1,14 @@
-body {
+header img{
+    width:140px;
+    border-radius:20px;
+    margin-bottom:15px;
+}
+
+.logo{
+    display:block;
+    margin:auto;
+}
+body img{
     background-image: url('images/Are You a Pet Photographer_ Here’s What Pet Marketing Unleashed Has for You! (1).jpeg');
     background-size: cover;
     background-position: center;
