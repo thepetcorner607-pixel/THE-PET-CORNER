@@ -8,14 +8,14 @@ header img{
     display:block;
     margin:auto;
 }
-body img{
-    background-image: url('images/Are You a Pet Photographer_ Here’s What Pet Marketing Unleashed Has for You! (1).jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+body{
+    background-image:url('images/yourimage.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 }
-<style> 
+
 button{
     background:#25D366;
     color:green;
@@ -30,25 +30,24 @@ button{
 <button>View Details</button>
 
 button{
-  background: linear-gradient(45deg,#00c853,#00e676);
+  background: light (45deg,#00c853,#00e676);
 }
 <button>grooming</button>
 
 button{
-  background: linear-gradient(45deg,#00c853,#00e676);
+  background: yellow (45deg,#00c853,#00e676);
 }
 <button>🐕 pet sale</button>
 
 button{
-  background: linear-gradient(45deg,#00c853,#00e676);
+  background: green (45deg,#00c853,#00e676);
 }
 <button>💉 vaccination</button>
 
 button{
-  background: linear-gradient(45deg,#00c853,#00e676);
+  background: light blue (45deg,#00c853,#00e676);
 }
 button:hover{
     transform:translateY(-4px);
     box-shadow:0 0 25px #25D366;
 }
-</style>
