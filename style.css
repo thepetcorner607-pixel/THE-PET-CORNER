@@ -27,7 +27,26 @@ button{
     box-shadow:0 0 15px #25D366;
     transition:0.3s;
 }
+<button>View Details</button>
 
+button{
+  background: linear-gradient(45deg,#00c853,#00e676);
+}
+<button>grooming</button>
+
+button{
+  background: linear-gradient(45deg,#00c853,#00e676);
+}
+<button>🐕 pet sale</button>
+
+button{
+  background: linear-gradient(45deg,#00c853,#00e676);
+}
+<button>💉 vaccination</button>
+
+button{
+  background: linear-gradient(45deg,#00c853,#00e676);
+}
 button:hover{
     transform:translateY(-4px);
     box-shadow:0 0 25px #25D366;
