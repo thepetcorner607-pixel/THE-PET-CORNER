@@ -238,10 +238,209 @@ View Details
 <section class="gallery">
 
 <h2>Available Puppies</h2>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Corner</title>
 
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f1f3f6;
+}
+
+/* Header */
+.header{
+    background:#2874f0;
+    color:white;
+    padding:15px;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Product Grid */
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+/* Pet Card */
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.info{
+    padding:15px;
+}
+
+.name{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.rating{
+    background:#388e3c;
+    color:white;
+    display:inline-block;
+    padding:4px 8px;
+    border-radius:5px;
+    margin-top:8px;
+}
+
+.price{
+    font-size:24px;
+    color:#e53935;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin-top:12px;
+    border:none;
+    border-radius:8px;
+    background:#ff9f00;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#fb8c00;
+}
+
+/* Popup */
+.popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+}
+
+.popup-content{
+    background:white;
+    width:90%;
+    max-width:450px;
+    margin:80px auto;
+    padding:20px;
+    border-radius:15px;
+}
+
+.close{
+    float:right;
+    font-size:28px;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+🐾 PET CORNER
+</div>
+
+<div class="products">
+
+    <div class="card">
+        <img src="images/labrador.jpg">
+        <div class="info">
+            <div class="name">German Shepherd</div>
+            <div class="rating">⭐ 4.8</div>
+            <div class="price">₹13,500</div>
+            <button onclick="showPet('German Shepherd')">
+                View Details
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/husky.jpg">
+        <div class="info">
+            <div class="name">Rottweiler</div>
+            <div class="rating">⭐ 4.9</div>
+            <div class="price">₹16,500</div>
+            <button onclick="showPet('Rottweiler')">
+                View Details
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <span class="close"
+              onclick="closePopup()">&times;</span>
+
+        <h2 id="petName"></h2>
+        <p id="petInfo"></p>
+    </div>
+</div>
+
+<script>
+
+const pets = {
+
+labrador:{
+name:"German Shepherd 2 Coat",
+info:
+"🐶 Friendly family dog\n\n🎂 Age: 2 Months\n💉 Vaccinated: Yes\n🍖 Food: Puppy Food\n📍 Location: churu"
+},
+
+Rottweiler:{
+name:"Rottweiler",
+info:
+"🐶 Energetic and beautiful breed\n\n🎂 Age: 3 Months\n💉 Vaccinated: Yes\n🍖 Food: High Protein Diet\n📍 Location: Churu"
+}
+
+};
+
+function showPet(id){
+    document.getElementById("popup").style.display="block";
+    document.getElementById("petName").innerText =
+        pets[id].name;
+
+    document.getElementById("petInfo").innerText =
+        pets[id].info;
+}
+
+function closePopup(){
+    document.getElementById("popup").style.display="none";
+}
+
+</script>
+
+</body>
+</html>
 <div class="images">
 
-<img src="logo/flat-coming-soon-background-with-megaphone_1017-33737.jpg">
+img src="logo/flat-coming-soon-background-with-megaphone_1017-33737.jpg">
 "Caring pets with love, grooming, health, happiness, and trust."
 
 </div>
