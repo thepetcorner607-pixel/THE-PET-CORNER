@@ -255,22 +255,6 @@ button:hover{
 </style>
 </head>
 <body>
-<button class="view-btn"
-onclick="showDetails('German Shepherd')">
-    View Details
-</button>
-  .view-btn{
-    background:#2874f0;
-    color:white;
-    border:none;
-    padding:8px 18px;
-    border-radius:8px;
-    cursor:pointer;
-    font-weight:bold;
-    width:auto;
-    display:block;
-    margin:15px auto 0;
-}
 <div class="header">
 🐾 THE PET CORNER 🐾
 </div>
@@ -284,6 +268,20 @@ onclick="showDetails('German Shepherd')">
             <p>Friendly & Intelligent Dog</p>
             <button onclick="showDetails('German Shepherd')">
                 View Details
+              <button class="view-btn">View Details</button>
+
+<style>
+.view-btn{
+    background:#2874f0;
+    color:white;
+    border:none;
+    padding:6px 12px;   /* button size */
+    font-size:12px;     /* text size */
+    border-radius:6px;
+    cursor:pointer;
+}
+</style>
+</button>
             </button>
         </div>
     </div>
