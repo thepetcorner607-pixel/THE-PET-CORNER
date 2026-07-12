@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   
-<img src="images/file_00000000beac72098fe82e5ff1f8ca90.png" class="logo"> </head>
+img src="images/file_00000000beac72098fe82e5ff1f8ca90.png" class="logo"> </head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +44,7 @@ body{
 background:#f5f5f5;
 }
 
-<header> <img src="Logo/file_00000000beac72098fe82e5ff1f8ca90.png"> </header>
+<header> img src="Logo/file_00000000beac72098fe82e5ff1f8ca90.png"> </header>
      alt="The Pet Corner Logo"
      class="logo">
 
@@ -175,7 +175,119 @@ padding:20px;
 </section>
 
 
-<section class="services">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pet Corner</title>
+<style>
+body{
+    font-family: Arial;
+    background:#f1f3f6;
+    margin:0;
+}
+
+.header{
+    background:#2874f0;
+    color:white;
+    padding:15px;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.pet-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+.pet-card{
+    width:250px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.pet-card:hover{
+    transform:translateY(-5px);
+}
+
+.pet-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.pet-info{
+    padding:15px;
+}
+
+.pet-info h3{
+    margin:0;
+    color:#333;
+}
+
+.pet-info p{
+    color:gray;
+}
+
+button{
+    width:100%;
+    background:#2874f0;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#1c5dc9;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+🐾 THE PET CORNER
+</div>
+
+<div class="pet-container">
+
+    <div class="pet-card">
+        <img src="logo/forselldog1.jpg">
+      <video src="logo/forselldog1video.mp4">
+        <div class="pet-info">
+            <h3>German Shepherd/h3>
+            <p>Friendly & Intelligent Dog</p>
+            <button onclick="showDetails('German Shepherd')">
+                View Details
+            </button>
+        </div>
+    </div>
+
+    <div class="pet-card">
+        <img src="images/forselldog2.jpg">
+        <div class="pet-info">
+            <h3>Rottweiler</h3>
+            <p>Energetic & Beautiful Dog</p>
+            <button onclick="showDetails('Rottweiler')">
+                View Details
+            </button>
+        </div>
+    </div>
+
+    <div class="pet-card">
+        <img src="images/forselldog3.jpg">
+        <div class="pet-info">
+            <h3>Labrador</h3>
+            <p>Small & Cute Companion</p>
+            <button onclick="showDetails('Labrador')">
                 View Details
             </button>
         </div>
@@ -183,64 +295,32 @@ padding:20px;
 
 </div>
 
-<div class="popup" id="popup">
-    <div class="popup-content">
-        <span class="close"
-              onclick="closePopup()">&times;</span>
-
-        <h2 id="petName"></h2>
-        <p id="petInfo"></p>
-    </div>
-</div>
-
 <script>
+function showDetails(breed){
 
-const pets = {
-
-labrador:{
-name:"German Shepherd 2 Coat",
-info:
-"🐶 Friendly family dog\n\n🎂 Age: 2 Months\n💉 Vaccinated: Yes\n🍖 Food: Puppy Food\n📍 Location: churu"
-},
-
-Rottweiler:{
-name:"Rottweiler",
-info:
-"🐶 Energetic and beautiful breed\n\n🎂 Age: 3 Months\n💉 Vaccinated: Yes\n🍖 Food: High Protein Diet\n📍 Location: Churu"
+if(breed=="German shepherd"){
+alert(
+"German shepherd\n\nLife: 3 -6months\nNature: Friendly\nPrice: ₹11,500 - ₹15,000"
+);
 }
 
-};
-
-function showPet(id){
-    document.getElementById("popup").style.display="block";
-    document.getElementById("petName").innerText =
-        pets[id].name;
-
-    document.getElementById("petInfo").innerText =
-        pets[id].info;
+if(breed=="Rottweiler"){
+alert(
+"Rottweiler\n\nLife: 3-6 months\nNature: Energetic\nPrice: ₹13,000 - ₹18,000"
+);
 }
 
-function closePopup(){
-    document.getElementById("popup").style.display="none";
+if(breed=="Labrador"){
+alert(
+"Pug\n\nLife: 3-8 monthss\nNature: Cute & Loyal\nPrice: ₹5,000 - ₹15,000"
+);
 }
 
+}
 </script>
 
 </body>
 </html>
-<h2>Our Services</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>🐶 Pet Sale</h3>
-<p>Dogs & Cats Available</p>
-</div>
-<button onclick="showDetails('Labrador Retriever',
-        '2 Years',
-        'Friendly and Family Dog',
-        '₹20,000)">
-View Details </button>
 <div class="card">
 <h3>🐶 Grooming</h3>
 <p>Dogs & Cats Available</p>
