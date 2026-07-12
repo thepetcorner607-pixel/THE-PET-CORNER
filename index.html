@@ -237,14 +237,13 @@ body{
 }
 
 button{
-    width:auto;
+    width:100%;
     background:#2874f0;
     color:white;
     border:none;
     padding:12px;
     border-radius:8px;
     cursor:pointer;
-    margin:15px auto 0;
     font-weight:bold;
   
 }
@@ -252,10 +251,26 @@ button{
 button:hover{
     background:#1c5dc9;
 }
+  
 </style>
 </head>
 <body>
-
+<button class="view-btn"
+onclick="showDetails('German Shepherd')">
+    View Details
+</button>
+  .view-btn{
+    background:#2874f0;
+    color:white;
+    border:none;
+    padding:8px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    width:auto;
+    display:block;
+    margin:15px auto 0;
+}
 <div class="header">
 🐾 THE PET CORNER 🐾
 </div>
