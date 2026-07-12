@@ -176,7 +176,58 @@ padding:20px;
 
 
 <section class="services">
+                View Details
+            </button>
+        </div>
+    </div>
 
+</div>
+
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <span class="close"
+              onclick="closePopup()">&times;</span>
+
+        <h2 id="petName"></h2>
+        <p id="petInfo"></p>
+    </div>
+</div>
+
+<script>
+
+const pets = {
+
+labrador:{
+name:"German Shepherd 2 Coat",
+info:
+"🐶 Friendly family dog\n\n🎂 Age: 2 Months\n💉 Vaccinated: Yes\n🍖 Food: Puppy Food\n📍 Location: churu"
+},
+
+Rottweiler:{
+name:"Rottweiler",
+info:
+"🐶 Energetic and beautiful breed\n\n🎂 Age: 3 Months\n💉 Vaccinated: Yes\n🍖 Food: High Protein Diet\n📍 Location: Churu"
+}
+
+};
+
+function showPet(id){
+    document.getElementById("popup").style.display="block";
+    document.getElementById("petName").innerText =
+        pets[id].name;
+
+    document.getElementById("petInfo").innerText =
+        pets[id].info;
+}
+
+function closePopup(){
+    document.getElementById("popup").style.display="none";
+}
+
+</script>
+
+</body>
+</html>
 <h2>Our Services</h2>
 
 <div class="cards">
