@@ -232,30 +232,29 @@ body{
 }
 
 .pet-info p{
-    color:light yellow;
+    color:gray;
 }
+
 button{
-    background:#25D366;
+    width:100%;
+    background:#2874f0;
     color:white;
     border:none;
-    padding:4px 8px;   /* button size */
-    font-size:6px;     /* text size */
-    width-90px
-  height-30px
-  border-radius:px;
+    padding:12px;
+    border-radius:8px;
     cursor:pointer;
-  }
+    font-weight:bold;
+}
 
 button:hover{
     background:#1c5dc9;
 }
-  
 </style>
 </head>
 <body>
-<div id="websiteContent" style="display:none;">
+
 <div class="header">
-🐾 THE PET CORNER 🐾
+🐾 THE PET CORNER
 </div>
 
 <div class="pet-container">
@@ -263,39 +262,64 @@ button:hover{
     <div class="pet-card">
         <img src="logo/forselldog1.jpg">
         <div class="pet-info">
-            <h3>German Shepherd💥</h3>
+            <h3>Golden Retriever</h3>
             <p>Friendly & Intelligent Dog</p>
-            <button onclick="showDetails('German Shepherd')">
-                View Details <button>
-<style>
-</style>
-</button>
+            <button onclick="showDetails('Golden Retriever')">
+                View Details
             </button>
         </div>
     </div>
 
     <div class="pet-card">
-        <img src="logo/forselldog2.jpg">
+        <img src="images/husky.jpg">
         <div class="pet-info">
-            <h3>Rottweiler💥</h3>
+            <h3>Siberian Husky</h3>
             <p>Energetic & Beautiful Dog</p>
-            <button onclick="showDetails('Rottweiler')">
+            <button onclick="showDetails('Husky')">
                 View Details
             </button>
-      
+        </div>
+    </div>
 
     <div class="pet-card">
-        <img src="logo/forselldog3.jpg">
+        <img src="images/pug.jpg">
         <div class="pet-info">
-            <h3>Labrador💥</h3>
+            <h3>Pug</h3>
             <p>Small & Cute Companion</p>
-            <button onclick="showDetails('Labrador')">
+            <button onclick="showDetails('Pug')">
                 View Details
             </button>
         </div>
     </div>
 
 </div>
+
+<script>
+function showDetails(breed){
+
+if(breed=="Golden Retriever"){
+alert(
+"Golden Retriever\n\nLife: 10-12 years\nNature: Friendly\nPrice: ₹15,000 - ₹40,000"
+);
+}
+
+if(breed=="Husky"){
+alert(
+"Siberian Husky\n\nLife: 12-15 years\nNature: Energetic\nPrice: ₹50,000 - ₹1,00,000"
+);
+}
+
+if(breed=="Pug"){
+alert(
+"Pug\n\nLife: 12-15 years\nNature: Cute & Loyal\nPrice: ₹8,000 - ₹25,000"
+);
+}
+
+}
+</script>
+
+</body>
+</html>
 
 <script>
 function showDetails(breed){
