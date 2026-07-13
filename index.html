@@ -253,10 +253,6 @@ button:hover{
 </style>
 </head>
 <body>
-
-<div id="loginPopup">
-....
-</div> 
 <div id="websiteContent" style="display:none;">
 <div class="header">
 🐾 THE PET CORNER 🐾
@@ -326,91 +322,6 @@ alert(
 }
 </script>
 </div>
-</script>
-  <script type="module">
-
-import { initializeApp }
-from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-
-import {
-getAuth,
-signInWithEmailAndPassword,
-GoogleAuthProvider,
-signInWithPopup
-}
-from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-
-const firebaseConfig = {
- apiKey:"AIzaSyAu1dhufgDeO_FBHx2-DBAGw9ni1gcil68",
- authDomain:"the-pet-corner.firebaseapp.com",
- projectId:"the-pet-corner",
- storageBucket:"the-pet-corner.firebasestorage.app",
- messagingSenderId:"901958307495",
- appId:"1:901958307495:web:544e49e086dd9699a25582"
-};
-
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-
-window.loginUser = function(){
-
-let email =
-document.getElementById("email").value;
-
-let password =
-document.getElementById("password").value;
-
-signInWithEmailAndPassword(
-auth,email,password
-)
-
-.then(()=>{
-alert("Login Successful");
-document.getElementById(
-"loginPopup"
-).style.display="none";
-})
-
-.catch((error)=>{
-alert(error.message);
-});
-
-}
-
-window.googleLogin=function(){
-
-const provider =
-new GoogleAuthProvider();
-
-signInWithPopup(auth,provider)
-.then(()=>{
-alert("Google Login Successful");
-document.getElementById(
-"loginPopup"
-).style.display="none";
-});
-
-}
-
-window.checkLogin=function(){
-
-if(auth.currentUser){
-
-window.open(
-'https://wa.me/918000616511'
-);
-
-}else{
-
-document.getElementById(
-'loginPopup'
-).style.display='block';
-
-}
-
-}
-
-  </script>
 </body>
 
 <div id="websiteContent" style="display:none;">
