@@ -351,17 +351,31 @@ alert(
 </html>
   
 </button>
-<div class="card">
-<h3>🐶 Grooming</h3>
-<p>Dogs & Cats Available</p>
-</div>
-<button onclick="window.open ('https://wa.me/918000616511')">
-View Details 
-</button>
+<button class="grooming-btn">🐶 Pet Grooming</button>
+  <button onclick="view details"('https://wa.me/918000616511')">
+View Details
+  </button>
 
 <style>
+.grooming-btn{
+    background: #25D366;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.grooming-btn:hover{
+    transform: scale(1.05);
+    background: #1ebe5d;
+}
 </style>
-</button>
 
 <div class="card">
 <h3>💉 Vaccination</h3>
