@@ -1,134 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anu Web Developer 607 — Hero Section Demo</title>
+<link rel="stylesheet" href="hero.css">
 </head>
-<header> 
-</header>
-     alt="The Pet Corner Logo"
-     class="logo">
-
-header img{
-width:60px;
-border-radius:20px;
-margin-bottom:15px;
-}
-
-header h1{
-font-size:40px;
-}
-
-header p{
-font-size:18px;
-margin-top:10px;
-}
-
-.banner{
-padding:20px;
-}
-
-.banner img{
-width:100%;
-border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,0.2);
-}
-
-.services{
-padding:30px 20px;
-text-align:center;
-}
-
-.services h2{
-font-size:32px;
-margin-bottom:25px;
-color:#009688;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-.card h3{
-color:#009688;
-margin-bottom:10px;
-}
-
-.gallery{
-padding:30px 20px;
-text-align:center;
-}
-
-.gallery h2{
-color:#009688;
-margin-bottom:20px;
-}
-
-.images{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.images img{
-width:100%;
-border-radius:20px;
-}
-
-.contact{
-background:#009688;
-color:white;
-text-align:center;
-padding:40px 20px;
-}
-
-.btn{
-display:inline-block;
-background:#25D366;
-padding:15px 30px;
-border-radius:50px;
-text-decoration:none;
-color:white;
-font-size:18px;
-margin-top:15px;
-}
-
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:20px;
-}
-</style>
-</head>
-
 <body>
 
-<header>
+<section class="anu-hero">
 
-<img src="images/file_00000000beac72098fe82e5ff1f8ca90.png">
+  <canvas class="anu-hero__particles" id="anuParticles"></canvas>
 
-<h1> <style="Red"> </h1>
+  <div class="anu-hero__content">
 
-<p>     Sell • Buy • Grooming • Vaccination</p>
+    <div class="anu-hero__left">
+      <div class="anu-hero__avatar-wrap">
+        <div class="anu-hero__ring"></div>
+        <div class="anu-hero__ring anu-hero__ring--2"></div>
+        <div class="anu-hero__avatar">
+          <img src="avatar.png" alt="Founder" onerror="this.style.display='none'">
+        </div>
+        <div class="anu-hero__badge">Founder <span class="anu-hero__fire">🔥</span></div>
+      </div>
 
-</header>
+      <h1 class="anu-hero__title">
+        <span class="anu-hero__line anu-hero__line--1">ANU WEB</span>
+        <span class="anu-hero__line anu-hero__line--2">DEVELOPER <em>607</em></span>
+      </h1>
+
+      <p class="anu-hero__subtitle">
+        <span class="anu-hero__typer" id="anuTyper"></span><span class="anu-hero__cursor">|</span>
+      </p>
+
+      <a href="#" class="anu-hero__cta">Get Started</a>
+    </div>
+
+    <div class="anu-hero__right">
+      <div class="anu-hero__tri-scene" id="anuTriScene">
+        <div class="anu-hero__tri anu-hero__tri--orange"></div>
+        <div class="anu-hero__tri anu-hero__tri--blue"></div>
+        <div class="anu-hero__tri anu-hero__tri--green"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="anu-hero__glow anu-hero__glow--orange"></div>
+  <div class="anu-hero__glow anu-hero__glow--blue"></div>
+  <div class="anu-hero__glow anu-hero__glow--green"></div>
+
+</section>
+
+<!-- The rest of your website's content would continue below -->
+
+<script src="hero.js"></script>
+</body>
+</html>
 
 
-<section class="banner">
+<<section class="banner">
 
 <img src="images/file_00000000352c72088e2aa1fa231c0dc7.png">
 
