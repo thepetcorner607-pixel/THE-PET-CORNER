@@ -5,15 +5,9 @@
   --anu-green:#8cc63f;
   --anu-white:#f5f5f7;
 
-  position:relative;
-  width:100%;
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  overflow:hidden;
-  perspective:1200px;
-  padding:80px 24px;
+  width:100px;
+    border-radius:20px;
+    margin-bottom:15px;
   font-family:'Segoe UI', system-ui, -apple-system, sans-serif;
   background:
     radial-gradient(ellipse at 20% 30%, rgba(140,198,63,0.06), transparent 40%),
@@ -213,10 +207,12 @@
 
 .anu-hero__tri{
   position:absolute;
-  width:150px; height:130px;
+  width:100px;
+    border-radius:20px;
+    margin-bottom:15px;
   transform-style:preserve-3d;
   clip-path:polygon(50% 0%, 0% 100%, 100% 100%);
-  box-shadow:0 20px 40px rgba(0,0,0,0.45);
+  box-shadow:none 40px rgba(0,0,0,0.45);
 }
 .anu-hero__tri::after{
   content:"";
