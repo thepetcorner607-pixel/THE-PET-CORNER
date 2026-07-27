@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anu Web Developer 607 — Hero Section Demo</title>
+<link rel="stylesheet" href="hero.css">
+</head>
+<body>
+
+<section class="anu-hero">
+
+  <canvas class="anu-hero__particles" id="anuParticles"></canvas>
+
+  <div class="anu-hero__content">
+
+    <div class="anu-hero__left">
+      <div class="anu-hero__avatar-wrap">
+        <div class="anu-hero__ring"></div>
+        <div class="anu-hero__ring anu-hero__ring--2"></div>
+        <div class="anu-hero__avatar">
+          <img src="avatar.png" alt="Founder" onerror="this.style.display='none'">
+        </div>
+        <div class="anu-hero__badge">Founder <span class="anu-hero__fire">🔥</span></div>
+      </div>
+
+      <h1 class="anu-hero__title">
+        <span class="anu-hero__line anu-hero__line--1">ANU WEB</span>
+        <span class="anu-hero__line anu-hero__line--2">DEVELOPER <em>607</em></span>
+      </h1>
+
+      <p class="anu-hero__subtitle">
+        <span class="anu-hero__typer" id="anuTyper"></span><span class="anu-hero__cursor">|</span>
+      </p>
+
+      <a href="#" class="anu-hero__cta">Get Started</a>
+    </div>
+
+    <div class="anu-hero__right">
+      <div class="anu-hero__tri-scene" id="anuTriScene">
+        <div class="anu-hero__tri anu-hero__tri--orange"></div>
+        <div class="anu-hero__tri anu-hero__tri--blue"></div>
+        <div class="anu-hero__tri anu-hero__tri--green"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="anu-hero__glow anu-hero__glow--orange"></div>
+  <div class="anu-hero__glow anu-hero__glow--blue"></div>
+  <div class="anu-hero__glow anu-hero__glow--green"></div>
+
+</section>
+
+  <script src="hero.js"></script>
+</body>
+</html>
